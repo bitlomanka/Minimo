@@ -1,0 +1,53 @@
+.articles-preview{
+    margin-bottom:0;
+}
+
+.articles-preview__list{
+    @extend %letter-spacing;
+    margin: 0 0 0 -6.2%;
+}
+
+.articles-preview__item{
+    @extend %inline-block;
+    width: 43.8%;
+    overflow: hidden;
+    margin: 0 0 126px 6.2%;
+    color: $color-text;
+}
+
+.articles-preview__container-img{
+    display: block;
+    position: relative;
+    padding: 66% 0 0 0;
+    margin: 0 0 33px;
+}
+
+.articles-preview__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.articles-preview__title{
+    font: 30px $pdr;
+    margin: 0 0 30px;
+}
+
+.articles-preview__text{
+    font: 14px/23px $pdr;
+    max-height: 73px;
+    overflow: hidden;
+}
+
+.load-more{
+    display: block;
+    font: 20px $pdr;
+    color: $color-text;
+    padding: 16px 22px;
+    border: 1px solid #626262;
+    margin: 0 auto 200px auto;
+    width: 13%;
+}

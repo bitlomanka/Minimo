@@ -35,11 +35,9 @@
     }
 }
 
-$font-family:'pf_din_text_cond_promedium';
+$pdr:'playfair_displayregular';
 
-$color-text: #333333;
-
-$active-color: #0089cf;
+$color-text: #626262;
 
 h1, h2, h3{
     margin: 0;
@@ -70,14 +68,13 @@ input{
 
 html, body {
     height: 100%;
-    font-family: $font-family;
+    background: #ffffff;
 }
 
 .wrapper{
     display: table;
     height: 100%;
     width: 100%;
-    background: #f2f9fd;
     position: relative;
 }
 
@@ -88,8 +85,8 @@ html, body {
 }
 
 .container{
-    max-width: 1280px;
-    padding: 20px 20px 0;
+    max-width: 1200px;
+    padding: 0 5.5%;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
@@ -98,6 +95,19 @@ html, body {
 
 .wrapp-inline-block{
     @extend %letter-spacing;
+}
+
+.section-content{
+    width: 85.5%;
+    margin: 0 auto 127px auto;
+}
+
+.sections{
+    display: block;
+    color: #b4ad9e;
+    font: 14px 'ubuntulight';
+    text-transform: uppercase;
+    margin: 0 0 17px;
 }
 
 

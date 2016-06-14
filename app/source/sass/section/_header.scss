@@ -1,0 +1,39 @@
+.header{
+    overflow: hidden;
+    margin: 0 0 75px 0;
+    padding: 70px 0 0;
+}
+
+.container-logo{
+    display: block;
+    width: 119px;
+    height: 23px;
+    float: left;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.navigation-list{
+    float: right;
+    @extend %letter-spacing;
+    width: 55%;
+    min-width: 553px;
+}
+
+.navigation__item{
+    @extend %inline-block;
+    margin: 0 0 0 18%;
+    &:first-child{
+        margin: 0;
+    }
+}
+
+.navigation__link{
+    display: block;
+    font: 14px $pdr;
+    color: $color-text;
+    text-transform: uppercase;
+}

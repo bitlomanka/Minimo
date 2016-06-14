@@ -1,0 +1,28 @@
+.head-content__container-img{
+    width: 100%;
+    padding: 48% 0 0 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 92px;
+}
+
+.head-content__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    font: 30px $pdr;
+    color: $color-text;
+    margin: 0 0 27px;
+}
+
+.head-content__description{
+    font: 14px/24px $pdr;
+    color: $color-text;
+    margin: 0 0 50px;
+}

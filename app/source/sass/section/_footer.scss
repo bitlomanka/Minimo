@@ -1,0 +1,60 @@
+.footer{
+    background: #f0f0f0;
+    height: 100px;
+    overflow: hidden;
+    font: 14px/28px $pdr;
+    .container{
+        background: none;
+        padding: 32px 5.5%;
+    }
+}
+
+.footer__text{
+    float: left;
+    margin: 0 0 0 18px;
+    &:first-child{
+        margin: 0 0 0 83px;
+    }
+}
+
+.socials{
+    float: right;
+    @extend %letter-spacing;
+}
+
+.socials__follow{
+    @extend %inline-block;
+}
+
+.socials__list{
+    @extend %inline-block;
+}
+
+.socials__item{
+    @extend %inline-block;
+    margin: 0 0 0 5px;
+}
+
+.socials__link{
+    display: block;
+    @extend %text-indent;
+    width: 34px;
+    height: 31px;
+    overflow: hidden;
+}
+
+$socials-spacing: 30px;
+
+@import "socials/*.png";
+
+.socials__link_facebook {
+    @include socials-sprite(fb);
+}
+
+.socials__link_twitter {
+    @include socials-sprite(tw);
+}
+
+.socials__link_instagram {
+    @include socials-sprite(in);
+}

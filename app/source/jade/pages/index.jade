@@ -1,10 +1,12 @@
 extends ../main
 
 block title
-    | bree-ecom
+    | minimo
     
 block content
-
-    include ../_common/_filter
-    main.content
-        include ../_common/_content-page1
+    .container
+        include ../_common/_head-content
+        include ../_common/_articles-preview
+    include ../_common/_newsletter
+    .container
+        include ../_common/_articles-preview-2

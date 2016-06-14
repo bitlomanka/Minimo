@@ -1,0 +1,30 @@
+doctype html
+html
+  head(lang="ru")
+    title 
+        block title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    link(rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon")
+    //build:css css/bundle.min.css
+    link(href="css/lib/normalize.css" rel="stylesheet")
+    link(rel="stylesheet", href="bower/select2/dist/css/select2.min.css")
+    link(rel="stylesheet", href="fonts/stylesheet.css")
+    link(rel="stylesheet", href="css/style.css")
+    //endbuild
+    //build:js js/picturefill.js
+    script(async src="bower/picturefill/dist/picturefill.min.js")
+    //endbuild
+  body
+    .wrapper
+        .container
+            include _common/_header
+        block content
+        include _common/_footer
+    //build:js js/main.js
+    script(src="bower/jquery/dist/jquery.min.js")
+    script(src="bower/select2/dist/js/select2.min.js")
+    script(src="js/main.js")
+    //endbuild

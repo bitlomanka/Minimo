@@ -1,0 +1,35 @@
+.container-newsletter{
+    .section-content{
+        margin-bottom: 0;;
+    }
+}
+
+.articles-preview__list_recommended{
+    margin: 0 0 0 -4%;
+    padding: 14px 0 0;
+}
+
+.articles-preview__item_recommended{
+    width: 29.2%;
+    margin: 0 0 0 4%;
+    @include media("max-width: 480px"){
+        width: 100%;
+        margin: 0 0 100px;
+         &:last-child{
+            margin: 0 0 50px;
+        }
+    }
+}
+
+.articles-preview__title_recommended{
+    font-size: 20px;
+    margin: 0;
+    @include media("max-width: 700px"){
+        font-size: 18px;
+        text-align: center;
+    }
+    @include media("max-width: 480px"){
+        border-bottom: 1px solid $color-text;
+    }
+}
+    

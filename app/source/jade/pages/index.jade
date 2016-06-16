@@ -6,7 +6,10 @@ block title
 block content
     .container
         include ../_common/_head-content
-        include ../_common/_articles-preview
-    include ../_common/_newsletter
+        section.section-content.articles-preview
+            include ../_common/_article-prew-page-1
+            include ../_common/_articles-preview
+    .container-newsletter
+        include ../_common/_newsletter
     .container
         include ../_common/_articles-preview-2

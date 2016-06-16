@@ -1,0 +1,79 @@
+.section-content_page-2{
+    .section-content{
+        margin-bottom: 63px;
+    }
+}
+
+.article__container-img{
+    width: 100%;
+    position: relative;
+    padding: 74.5% 0 0;
+    overflow: hidden;
+    margin: 0 0 67px;
+}
+
+.article__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.blockquote{
+    font: 14px 'playfair_displayitalic';
+    color: $color-text;
+    margin: 0 0 47px;
+}
+
+.bold{
+    font-family: 'playfair_displayblack';
+}
+
+.socials__share{
+    @extend %inline-block;
+    color: #b4ad9e;
+    font: 13px 'ubuntulight';
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.socials-share__list{
+    @extend %inline-block;
+    padding: 10px 0 0;
+}
+
+.socials-share__item{
+    @extend %inline-block;
+    margin: 0 0 0 8px
+}
+
+.socials-share__link{
+    display: block;
+    height: 20px;
+    width: 20px;
+    @extend %text-indent;
+}
+
+@import "share/*.png";
+
+.socials-share__link_facebook {
+    @include share-sprite(fb);
+}
+
+.socials-share__link_twitter  {
+    @include share-sprite(tw);
+}
+
+.socials-share__link_google {
+    @include share-sprite(g);
+}
+
+.socials-share__link_tumblr{
+    @include share-sprite(tb);
+}
+
+.socials-share__link_pinterest {
+    @include share-sprite(p);
+}

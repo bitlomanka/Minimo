@@ -7,6 +7,14 @@
         background: none;
         padding: 32px 5.5%;
     }
+    .socials{
+        float: right;
+        @extend %letter-spacing;
+        @include media("max-width: 480px"){
+            float: none;
+            text-align: center;
+        }
+    }
 }
 
 .footer__text{
@@ -14,12 +22,13 @@
     margin: 0 0 0 18px;
     &:first-child{
         margin: 0 0 0 83px;
+        @include media("max-width: 700px"){
+            margin: 0;
+        }
     }
-}
-
-.socials{
-    float: right;
-    @extend %letter-spacing;
+    @include media("max-width: 480px"){
+        display: none;
+    }
 }
 
 .socials__follow{

@@ -1,0 +1,32 @@
+.sections
+    span.quantity-comments 2 
+    |comments
+.comments__container-block
+    .comments__container-img
+        img(src="images/ava/ava1.jpg", alt="ava").comments__img
+    .comments__container
+        .comments__name John Doe
+        .comments
+            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo!
+        .sections.comments__reply Reply
+.comments__container-block
+    .comments__container-img
+       .comments__ava-text JD
+    .comments__container
+        .comments__name Jane Doe
+        .comments
+            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+        .sections.comments__reply Reply
+form(action="").comments__container-block
+    .comments__container-img.comments__leave-bg
+       .comments__ava-text JD
+    .comments__container
+        textarea(name="comments" placeholder="Join the discussion").comments__leave-comment
+.socials
+    .socials__share Connected with
+    - var socials = ['facebook', 'twitter']
+    ul.socials-share__list
+        each item in socials
+            li.socials-share__item
+                a(href="#" class="socials-share__link_#{item}").socials-share__link= item
+    

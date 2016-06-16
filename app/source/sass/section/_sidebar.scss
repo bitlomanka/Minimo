@@ -1,0 +1,139 @@
+.sidebar{
+    float: right;
+    width: 25.5%;
+    @include media("max-width: 960px"){
+        float: none;
+        width: 100%;
+    }
+}
+
+.sidebar_container-about-me{
+    margin: 0 0 70px;
+    @include media("max-width: 960px"){
+        float: left;
+        width: 30%;
+    }
+    @include media("max-width: 700px"){
+        width: 50%;
+        text-align: center;
+    }
+    @include media("max-width: 480px"){
+        float: none;
+        width: 100%;
+    }
+}
+
+.sidebar__container-img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 65% 0 0;
+    margin: 0 0 28px;
+    @include media("max-width: 700px"){
+        
+    }
+}
+
+.sidebar__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar__title{
+    font: 24px $pdr;
+    color: $color-text;
+    margin: 0 0 12px;
+}
+
+.sidebar__text{
+    font: 12px/20px $pdr;
+    color: $color-text;
+    max-height: 78px;
+    overflow: hidden;
+    margin: 0 0 9px;
+}
+
+@import "share/*.png";
+
+.socials-share__link_instagram {
+    @include share-sprite(in);
+}
+
+.sidebar__container-top-post{
+    margin: 0 0 50px;
+    @include media("max-width: 960px"){
+        float: left;
+        width: 25%;
+        margin-left: 7%;
+    }
+    @include media("max-width: 700px"){
+        width: 40%;
+        margin-left: 10%;
+    }
+    @include media("max-width: 480px"){
+        float: none;
+        width: 100%;
+    }
+}
+
+.sidebar-top-post__list{
+    margin: 0 0 0 20px;
+}
+
+.sidebar-top-post__item{
+    list-style: disc;
+    color: #b4ad9e;
+    margin: 0 0 22px;
+}
+
+.sidebar-top-post__link{
+    display: block;
+    font: 16px $pdr;
+    color: $color-text;
+    margin: 0 0 14px;
+}
+
+.sidebar-top-post__link-comments{
+    display: block;
+    color: #b4ad9e;
+    font: 12px 'ubuntulight';
+    text-transform: uppercase;
+}
+
+.sidebar__container-banner{
+    position: relative;
+    overflow: hidden;
+    width: 92%;
+    padding: 92.2% 0 0 0;
+    background: #b4ad9e url(../images/banner.png) no-repeat center center;
+    @include media("max-width: 960px"){
+        padding: 250px 0 0;
+        float: left;
+        margin-left: 7%;
+        width: 30%;
+    }
+    @include media("max-width: 700px"){
+        display: none;
+    }
+}
+
+.sidebar__container-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font: 14px 'ubuntulight';
+    text-transform: uppercase;
+}
+
+.sidebar__banner-size {
+    font: 48px 'ubuntulight';
+    @include media("max-width: 960px"){
+        display: none;
+    }
+}

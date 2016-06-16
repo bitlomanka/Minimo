@@ -1,5 +1,8 @@
-.articles-preview{
-    margin-bottom:0;
+.articles-preview_wrapp{
+    margin-bottom:130px;
+    @include media("max-width: 960px"){
+        margin-bottom:90px;
+    }
 }
 
 .articles-preview__list{
@@ -13,6 +16,13 @@
     overflow: hidden;
     margin: 0 0 126px 6.2%;
     color: $color-text;
+    @include media("max-width: 960px"){
+        margin-bottom: 80px;
+    }
+    @include media("max-width: 480px"){
+        display: block;
+        width: 100%;
+    }
 }
 
 .articles-preview__container-img{
@@ -34,6 +44,12 @@
 .articles-preview__title{
     font: 30px $pdr;
     margin: 0 0 30px;
+    @include media("max-width: 960px"){
+        font-size: 25px;
+    }
+    @include media("max-width: 700px"){
+        font-size: 20px;
+    }
 }
 
 .articles-preview__text{
@@ -46,8 +62,16 @@
     display: block;
     font: 20px $pdr;
     color: $color-text;
-    padding: 16px 22px;
+    padding: 16px 0;
     border: 1px solid #626262;
     margin: 0 auto 200px auto;
     width: 13%;
+    text-align: center;
+    width: 163px;
+    text-align: center;
+    @include media("max-width: 700px"){
+        font-size: 16px;
+        padding: 7px 0;
+        width: 120px;
+    }
 }

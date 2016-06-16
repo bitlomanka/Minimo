@@ -78,7 +78,7 @@ html, body {
     position: relative;
 }
 
-.content {
+.content__wrapp{
     display: table-row;
     height: 100%;
     overflow: hidden;
@@ -89,7 +89,7 @@ html, body {
     padding: 0 5.5%;
     margin: 0 auto;
     box-sizing: border-box;
-    overflow: hidden;
+    @extend %clearfix;
     position: relative;
 }
 
@@ -98,8 +98,12 @@ html, body {
 }
 
 .section-content{
-    width: 85.5%;
-    margin: 0 auto 127px auto;
+    width: 85%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    @include media("max-width: 700px"){
+       width: 100%; 
+    }
 }
 
 .sections{
@@ -108,6 +112,22 @@ html, body {
     font: 14px 'ubuntulight';
     text-transform: uppercase;
     margin: 0 0 17px;
+}
+
+.section-content_page-3{
+    float: left;
+    width: 62.5%;
+    margin: 0 0 0 7.7%;
+    @include media("max-width: 960px"){
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+}
+
+.socials{
+    text-align: right;
+    margin-bottom: 100px;
 }
 
 

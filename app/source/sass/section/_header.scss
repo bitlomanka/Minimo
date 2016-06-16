@@ -1,7 +1,11 @@
 .header{
-    overflow: hidden;
+    @extend %clearfix;
     margin: 0 0 75px 0;
     padding: 70px 0 0;
+    position: relative;
+    @include media("max-width: 480px") {
+        padding: 30px 0 0; 
+    }
 }
 
 .container-logo{
@@ -9,6 +13,13 @@
     width: 119px;
     height: 23px;
     float: left;
+    @include media("max-width: 700px"){
+        float: none;
+        margin: 0 auto 50px auto;
+    }
+    @include media("max-width: 480px"){
+        float: left;
+    }
 }
 
 .logo{
@@ -16,17 +27,56 @@
     height: auto;
 }
 
+.mobile-navigation{
+    background: url(../images/mobile-navigation.png) no-repeat center center;
+    width: 32px;
+    height: 25px;
+    overflow: hidden;
+    display: none;
+    float: right;
+    cursor: pointer;
+    @include media("max-width: 480px"){
+        display: block;
+    }
+}
+
 .navigation-list{
     float: right;
     @extend %letter-spacing;
     width: 55%;
     min-width: 553px;
+    @include media("max-width: 960px") {
+        min-width: 455px;
+    }
+    @include media("max-width: 700px"){
+        width: 100%;
+        min-width: 0;
+    }
+    @include media("max-width: 480px") {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 50%;
+        display: none;
+        background: $color-text;
+        z-index: 2;
+    }
 }
 
 .navigation__item{
     @extend %inline-block;
     margin: 0 0 0 18%;
     &:first-child{
+        margin: 0;
+    }
+    @include media("max-width: 960px") {
+        margin: 0 0 0 14%;
+    }
+    @include media("max-width: 700px"){
+        margin: 0 0 0 12%;
+    }
+    @include media("max-width: 480px") {
+        display: block;
         margin: 0;
     }
 }
@@ -36,4 +86,9 @@
     font: 14px $pdr;
     color: $color-text;
     text-transform: uppercase;
+    @include media("max-width: 480px") {
+        font-size: 15px;
+        color: #fff;
+        padding: 10px 10%;
+    }
 }

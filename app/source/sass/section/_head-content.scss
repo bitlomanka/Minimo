@@ -4,6 +4,9 @@
     position: relative;
     overflow: hidden;
     margin: 0 0 92px;
+    @include media("max-width: 700px"){
+        margin: 0 0 65px;
+    }
 }
 
 .head-content__img{
@@ -19,10 +22,21 @@
     font: 30px $pdr;
     color: $color-text;
     margin: 0 0 27px;
+    @include media("max-width: 480px"){
+        text-align: center;
+        font-size: 26px;
+    }
 }
 
 .head-content__description{
     font: 14px/24px $pdr;
     color: $color-text;
     margin: 0 0 50px;
+    @include media("max-width: 480px") {
+        
+    }
+}
+
+.head-content__description_margin{
+    margin: 0 0 36px 0;
 }

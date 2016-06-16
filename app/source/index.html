@@ -13,14 +13,12 @@
 		<link rel="stylesheet" href="fonts/stylesheet.css">
 		<link rel="stylesheet" href="css/style.css">
 		<!--endbuild-->
-		<!--build:js js/picturefill.js-->
-		<script async src="bower/picturefill/dist/picturefill.min.js"></script>
-		<!--endbuild-->
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="container">
 				<header class="header"><a href="#" class="container-logo"><img src="images/logo.png" alt="minimo" class="logo"></a>
+					<div class="mobile-navigation"></div>
 					<ul class="navigation-list">
 						<li class="navigation__item"><a href="#" class="navigation__link">lifestyle</a></li>
 						<li class="navigation__item"><a href="#" class="navigation__link">photodiary</a></li>
@@ -29,14 +27,14 @@
 					</ul>
 				</header>
 			</div>
-			<main class="content">
+			<div class="content__wrapp">
 				<div class="container">
 					<div class="head-content__container-img"><img src="images/head-content.jpg" alt="" class="head-content__img"></div>
-					<section class="section-content"><a href="#" class="sections">photodiary</a>
-						<h1 class="title">The perfect weekend getaway</h1>
-						<div class="head-content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div><a href="#" class="sections">Leave a comment</a>
-					</section>
 					<section class="section-content articles-preview">
+						<div class="articles-preview_wrapp"><a href="#" class="sections">photodiary</a>
+							<h1 class="title">The perfect weekend getaway</h1>
+							<p class="head-content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p><a href="#" class="sections">Leave a comment</a>
+						</div>
 						<ul class="articles-preview__list">
 							<li class="articles-preview__item"><a href="#" class="articles-preview__container-img"><img src="images/img-article-preview1.jpg" alt="" class="articles-preview__img"></a><a href="#" class="sections">Lifestyle</a>
 								<h2 class="articles-preview__title">More than just a music festival</h2>
@@ -80,7 +78,7 @@
 						</ul><a href="#" class="load-more">Load more</a>
 					</section>
 				</div>
-			</main>
+			</div>
 			<footer class="footer">
 				<div class="container">
 					<div class="footer__text">Terms and conditions</div>

@@ -1,0 +1,18 @@
+extends ../main
+
+block title
+    | The perfect weekend getaway
+    
+block continuation-article
+    p.head-content__description.head-content__description_margin
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    
+block content
+    .container
+        include ../_common/_head-content
+            .section.section-content
+                include ../_common/_article
+    include ../_common/_recommended
+    .container
+        .section-content
+            include ../_common/_comments

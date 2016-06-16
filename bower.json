@@ -2,6 +2,8 @@
   "name": "project",
   "dependencies": {
     "jquery": "^1",
-    "normalize-css": "latest"
+    "normalize-css": "latest",
+    "jquery-placeholder": "latest",
+    "select2": "latest"
   }
 }
